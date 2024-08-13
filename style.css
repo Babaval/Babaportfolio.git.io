@@ -250,16 +250,18 @@ html {
     transition-duration: .5s; /* Sets transition duration */
 }
 
-/* Label for visual mode styles */
 #labelforvisualmode {
     position: relative; /* Relative positioning */
     width: 40px; /* Sets width */
     height: 40px; /* Sets height */
-    background-image: url(src/png/crescent-moon (1).png); /* Sets background image */
-    background-size: 50%; /* Sets background image size */
-    transition-duration: .5s; /* Sets transition duration */
+    background-image: url('src/png/crescent-moon(1).png'); /* Sets background image */
+    background-size: 50%; /* Sets background image size to 50% of the element's size */
+    background-repeat: no-repeat; /* Prevents the background from repeating */
+    background-position: center; /* Centers the background image */
+    transition-duration: 0.5s; /* Sets transition duration */
     cursor: pointer; /* Changes cursor to pointer */
 }
+
 
 /* Checked visual mode switch styles */
 #switchforvisualmode:checked + #labelforvisualmode {
